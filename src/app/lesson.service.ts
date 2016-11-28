@@ -7,7 +7,14 @@ export class LessonService {
   id = 0;
 
   constructor() {
-    this.id = LessonService.counter++;
     console.log(`instantiated lessons service with id ${this.id}`);
+  }
+
+  incr() {
+    this.id++;
+  }
+
+  getId() {
+    return this.id;
   }
 }

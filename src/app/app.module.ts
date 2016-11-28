@@ -6,6 +6,7 @@ import { HomeModule } from './home/home.module';
 
 import { AppComponent }  from './app.component';
 import { HomeComponent } from './home/home.component';
+import { LessonService } from './lesson.service';
 
 const routerConfig = [
     {
@@ -17,6 +18,7 @@ const routerConfig = [
 @NgModule({
   imports:      [ BrowserModule, HomeModule, RouterModule, RouterModule.forRoot(routerConfig) ],
   declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [LessonService]
 })
 export class AppModule { }
