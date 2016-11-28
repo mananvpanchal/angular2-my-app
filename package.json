@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.51",
+    "angular2-router-loader": "^0.3.4",
     "ts-helpers": "^1.1.2",
     "ts-loader": "^1.2.2",
     "typings": "^2.0.0",
