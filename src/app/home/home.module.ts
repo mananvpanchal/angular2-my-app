@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { SampleModule } from '../sample/sample.module';
 import { HomeComponent } from './home.component';
+import { LessonService } from '../lesson.service';
 
 const routerConfig = [
   {
@@ -14,7 +15,8 @@ const routerConfig = [
 @NgModule({
   imports: [SampleModule, RouterModule.forChild(routerConfig)],
   declarations: [HomeComponent],
-  exports: [HomeComponent]
+  exports: [HomeComponent],
+  providers: [LessonService]
 })
 export default class HomeModule {
 
