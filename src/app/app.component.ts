@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   template: `<div>
     <input type="text" (keyup)="onChange($event)" />
     <span>{{name}}</span>
-    <my-home></my-home>
+    <a routerLink="home">Home</a>
+    <router-outlet></router-outlet>
   </div>`
 })
 export class AppComponent {
