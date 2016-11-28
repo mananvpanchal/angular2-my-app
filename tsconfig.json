@@ -3,6 +3,7 @@
   "settings": {
     "atom-typescript.compileOnSave": false
   },
+  "emitDecoratorMetadata": true,
   "compilerOptions": {
     "experimentalDecorators": true,
     "outDir": "./out",
